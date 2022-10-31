@@ -20,7 +20,7 @@ function generatePassword () {
 
   while(confirmLength <= 7 || confirmLength >= 129) {
     alert('Password length must be between 8-128 characters. Try again');
-    var confirmLength = (prompt("How many characters would you like your password to be?"));
+    var confirmLength = (prompt('How many characters would you like your password to be?'));
 }
     alert(`Your password will have ${confirmLength} characters`);
 
@@ -31,7 +31,7 @@ function generatePassword () {
     var confirmSpecial = confirm('Click OK to confirm if you would like to include special chacters in your password');
 
     while(confirmLower === false && confirmUpper === false && confirmNumber === false && confirmSpecial === false) {
-      alert("You must choose at least one parameter");    
+      alert('You must choose at least one parameter');    
       var confirmLower = confirm('Click OK to confirm if you would like to include lowercase letters in your password.');
       var confirmUpper = confirm('Click OK to confirm if you would like to include uppercase letters in your password.');
       var confirmNumber = confirm('Click OK to confirm if you would like to include numbers in your password.');
@@ -65,7 +65,6 @@ function generatePassword () {
     }
     return randomPassword;
 }
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
