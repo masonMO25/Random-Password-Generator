@@ -25,17 +25,17 @@ function generatePassword () {
     alert(`Your password will have ${confirmLength} characters`);
 
     // Password will include 
-    var confirmLower = confirm('Click OK to confirm if you would like to include lowercase letters in your password.');
-    var confirmUpper = confirm('Click OK to confirm if you would like to include uppercase letters in your password.');
-    var confirmNumber = confirm('Click OK to confirm if you would like to include numbers in your password.'); 
-    var confirmSpecial = confirm('Click OK to confirm if you would like to include special chacters in your password');
+    var confirmLower = confirm('Click OK if you would like to include lowercase letters in your password.');
+    var confirmUpper = confirm('Click OK if you would like to include uppercase letters in your password.');
+    var confirmNumber = confirm('Click OK if you would like to include numbers in your password.'); 
+    var confirmSpecial = confirm('Click OK if you would like to include special chacters in your password');
 
     while(confirmLower === false && confirmUpper === false && confirmNumber === false && confirmSpecial === false) {
       alert('You must choose at least one parameter');    
-      var confirmLower = confirm('Click OK to confirm if you would like to include lowercase letters in your password.');
-      var confirmUpper = confirm('Click OK to confirm if you would like to include uppercase letters in your password.');
-      var confirmNumber = confirm('Click OK to confirm if you would like to include numbers in your password.');
-      var confirmSpecial = confirm('Click OK to confirm if you would like to include special chacters in your password');
+      var confirmLower = confirm('Click OK if you would like to include lowercase letters in your password.');
+      var confirmUpper = confirm('Click OK if you would like to include uppercase letters in your password.');
+      var confirmNumber = confirm('Click OK if you would like to include numbers in your password.');
+      var confirmSpecial = confirm('Click OK if you would like to include special chacters in your password');
     }
 
     var passwordConfirm = []
